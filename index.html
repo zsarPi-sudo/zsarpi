@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZSAR Paralegal Services</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="ZSAR Logo" class="logo" />
+        <div>
+          <h1>ZSAR Paralegal</h1>
+          <p>Legal documentation, drafting & support</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h2>Paralegal support that actually delivers.</h2>
+        <p>
+          Fast, reliable drafting and documentation for individuals, freelancers and startups.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn primary">Book a free callback</a>
+          <a href="https://wa.me/918108470961" target="_blank" class="btn ghost">
+            WhatsApp Us
+          </a>
+        </div>
+        <p class="hero-subnote">Response time: usually under 1 hour during working days.</p>
+      </div>
+      <div class="hero-card">
+        <h3>Quick Overview</h3>
+        <ul>
+          <li>Contracts & agreements</li>
+          <li>Notices & replies</li>
+          <li>Legal research support</li>
+          <li>Court-ready documentation</li>
+        </ul>
+        <p class="hero-note">
+          This is a demo web app. You can fully edit text, colors and links.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <h2>Services</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Contract Drafting</h3>
+          <p>Freelance, service, NDA, partnership and more – clear and enforceable.</p>
+        </article>
+        <article class="card">
+          <h3>Legal Notices</h3>
+          <p>Professional notices, replies and responses with proper structure.</p>
+        </article>
+        <article class="card">
+          <h3>Policy & Terms</h3>
+          <p>Website terms, privacy policy and service policies tailored to your use case.</p>
+        </article>
+        <article class="card">
+          <h3>Research & Summaries</h3>
+          <p>Case law summaries, statute extracts and issue-wise research support.</p>
+        </article>
+        <article class="card">
+          <h3>Draft Review</h3>
+          <p>Line‑by‑line review of your existing drafts with practical suggestions.</p>
+        </article>
+        <article class="card">
+          <h3>Documentation Workflow</h3>
+          <p>Templates and checklists so you stop reinventing documents every time.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Testimonials (localStorage) -->
+    <section id="testimonials">
+      <h2>Client Testimonials</h2>
+      <div id="testimonials-list" class="grid testimonials-grid">
+        <!-- Filled by JavaScript -->
+      </div>
+      <div class="note small">
+        Testimonials you add here are stored in your browser only (localStorage), so you can try the flow without any backend.
+      </div>
+    </section>
+
+    <!-- Feedback form -->
+    <section id="feedback">
+      <h2>Add a Testimonial (Demo)</h2>
+      <form id="feedback-form" class="form">
+        <div class="field">
+          <label for="fb-name">Name</label>
+          <input id="fb-name" name="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <label for="fb-service">Service used</label>
+          <input id="fb-service" name="service" type="text" placeholder="E.g. Contract drafting" required />
+        </div>
+        <div class="field">
+          <label>Rating</label>
+          <div class="stars" id="fb-stars">
+            <button type="button" data-value="1">★</button>
+            <button type="button" data-value="2">★</button>
+            <button type="button" data-value="3">★</button>
+            <button type="button" data-value="4">★</button>
+            <button type="button" data-value="5">★</button>
+          </div>
+          <input type="hidden" id="fb-rating" value="0" required />
+        </div>
+        <div class="field">
+          <label for="fb-text">Feedback</label>
+          <textarea id="fb-text" name="feedback" rows="3" placeholder="Short, honest feedback" required></textarea>
+        </div>
+        <button type="submit" class="btn primary">Save Locally</button>
+        <p class="note small">
+          This demo only stores data in your browser (no server, no database).
+        </p>
+      </form>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <h3>Direct Contact</h3>
+          <p>Phone: <a href="tel:+918108470961">+91 81084 70961</a></p>
+          <p>Email: <a href="mailto:zsarfreelance@gmail.com">zsarfreelance@gmail.com</a></p>
+          <p>WhatsApp: <a href="https://wa.me/918108470961" target="_blank">Chat now</a></p>
+        </div>
+        <form id="contact-form" class="form">
+          <div class="field">
+            <label for="c-name">Name</label>
+            <input id="c-name" type="text" required />
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input id="c-email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="c-message">What do you need help with?</label>
+            <textarea id="c-message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn primary">Open email draft</button>
+          <p class="note small">
+            Submitting opens an email draft in your mail app. You can change this later to hit a backend endpoint.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 ZSAR Paralegal. Demo site hosted on GitHub Pages & Cloudflare Pages.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
